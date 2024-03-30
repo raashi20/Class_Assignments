@@ -1,0 +1,28 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #f0f0f0;
+    border-bottom: 2px solid #ccc;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.content {
+    overflow: hidden; /* Clearing floats */
+}
+
+.content p {
+    float: left; /* Align paragraphs side by side */
+    width: 50%; /* Set width to 50% for each paragraph to make them occupy half of the container */
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}

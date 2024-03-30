@@ -1,0 +1,24 @@
+/* Resetting default margin and padding */
+* {
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the images */
+.image-container {
+    display: flex;
+}
+
+/* Styling for the images */
+img {
+    height: 200px;
+    width: 200px; /* Initial width of the images */
+    margin: 10px; /* Margin between images */
+    transition: transform 0.3s ease; /* Transition effect for smooth transformation */
+}
+
+/* Increase size of image on hover */
+img:hover {
+    transform: scale(1.2); /* Increase size by 20% */
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocomplete Input with Days of the Week</title>
+    <style>
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Autocomplete Input with Days of the Week</h1>
+    <form>
+        <label for="days">Select a day:</label>
+        <input type="text" id="days" name="days" list="day-list">
+        <datalist id="day-list">
+            <option value="Monday">
+            <option value="Tuesday">
+            <option value="Wednesday">
+            <option value="Thursday">
+            <option value="Friday">
+            <option value="Saturday">
+            <option value="Sunday">
+        </datalist>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

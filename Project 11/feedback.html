@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: normal;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Feedback Form</h1>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <th>Question</th>
+                <th>Response</th>
+            </tr>
+            <tr>
+                <td>1. How satisfied are you with the user interface?</td>
+                <td>
+                    <input type="radio" id="ui_satisfied" name="ui_satisfaction" value="satisfied">
+                    <label for="ui_satisfied">Satisfied</label>
+                    <input type="radio" id="ui_neutral" name="ui_satisfaction" value="neutral">
+                    <label for="ui_neutral">Neutral</label>
+                    <input type="radio" id="ui_unsatisfied" name="ui_satisfaction" value="unsatisfied">
+                    <label for="ui_unsatisfied">Unsatisfied</label>
+                </td>
+            </tr>
+            <tr>
+                <td>2. Which features do you find most useful? (Check all that apply)</td>
+                <td>
+                    <input type="checkbox" id="feature1" name="features[]" value="search">
+                    <label for="feature1">Search</label><br>
+                    <input type="checkbox" id="feature2" name="features[]" value="filter">
+                    <label for="feature2">Filter</label><br>
+                    <input type="checkbox" id="feature3" name="features[]" value="sort">
+                    <label for="feature3">Sort</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>3. How would you rate the performance of the software?</td>
+                <td>
+                    <select name="performance_rating">
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="average">Average</option>
+                        <option value="poor">Poor</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>4. Do you have any suggestions for improvement?</td>
+                <td>
+                    <textarea name="improvement_suggestions" rows="4" placeholder="Enter your suggestions here..."></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>5. Email (optional)</td>
+                <td>
+                    <input type="email" name="email" placeholder="Your email address">
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit Feedback">
+    </form>
+</body>
+</html>

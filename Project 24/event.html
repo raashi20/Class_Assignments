@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Cards</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .card h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+  }
+
+  .card p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .card .date {
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+  <div class="container" id="event-container">
+    <!-- Cards will be dynamically generated here -->
+  </div>
+
+  <script>
+    // Array of events
+    const events = [
+      {
+        image: '21f52bc9-a492-4522-9a5b-d0de2d72c767.jpg',
+        title: 'Event 1',
+        date: 'March 28, 2024',
+        description: 'Description for Event 1.'
+      },
+      {
+        image: 'Best Summer Music Festivals 2017 - Tasting Table.jpg',
+        title: 'Event 2',
+        date: 'April 5, 2024',
+        description: 'Description for Event 2.'
+      },
+      {
+        image: 'Photography – Page 28 – The Blue Brick _ Inspired Yarns.jpg',
+        title: 'Event 3',
+        date: 'April 12, 2024',
+        description: 'Description for Event 3.'
+      }
+    ];
+
+    // Function to generate card HTML for each event
+    function generateEventCards(events) {
+      const container = document.getElementById('event-container');
+
+      events.forEach(event => {
+        const card = document.createElement('div');
+        card.classList.add('card');
+
+        const image = document.createElement('img');
+        image.src = event.image;
+        card.appendChild(image);
+
+        const title = document.createElement('h2');
+        title.textContent = event.title;
+        card.appendChild(title);
+
+        const date = document.createElement('p');
+        date.classList.add('date');
+        date.textContent = event.date;
+        card.appendChild(date);
+
+        const description = document.createElement('p');
+        description.textContent = event.description;
+        card.appendChild(description);
+
+        container.appendChild(card);
+      });
+    }
+
+    // Call the function to generate event cards
+    generateEventCards(events);
+  </script>
+</body>
+</html>

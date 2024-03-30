@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Delicious Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><b>Contact Us</b></h1>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo2.jpg" alt="deliciousbakery.com" width="150" height="150">
+        </div>
+
+        <ul>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="service.html">Services</a></li>
+            <li class="item"><a href="about_us.html">About Us</a></li>
+            <li class="item"><a href="contact.html">Contact Us</a></li> <!-- Added link for Contact Us page -->
+        </ul>
+    </nav>
+    <section class="contact-form">
+        <h2>Contact Form</h2>
+        <form action="submit_contact_form.php" method="POST"> <!-- You need to specify the action to handle form submission -->
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="number">Mobile Number:</label>
+            <input type="text" id="number" name="number" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>

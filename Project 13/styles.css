@@ -1,0 +1,28 @@
+/* styles.css */
+
+body {
+    background-color: #f0f0f0; /* Background color */
+    background-image: linear-gradient(to bottom right, #00bfff, hsl(295, 100%, 50%)); /* Background image with gradient overlay */
+    color: #fff; /* Text color */
+    font-size: 15px; /* Font size for paragraphs */
+    line-height: 1.5; /* Increase line spacing in paragraph text */
+}
+
+h1 {
+    font-size: 30px; /* Font size for h1 */
+    font-weight: bold; /* Make h1 bolder */
+    color: #000; /* Color for h1 according to background */
+}
+
+p {
+    color: #000; /* Color for paragraphs according to background */
+}
+
+strong {
+    color: #ff0; /* Highlight important words */
+}
+
+h2 {
+    font-size: 20px; /* Font size for h2 */
+    color: #fff; /* Color for h2 according to background */
+}
